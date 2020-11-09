@@ -1,9 +1,16 @@
 version: 1
 accounts:
-  - name: user1
-    coins: ["1000token", "100000000stake"]
-  - name: user2
-    coins: ["500token"]
+  - name: matt
+    coins: ["1000mattcoin", "100000000chipino"]
+  - name: matt2
+    coins: ["500mattcoin"]
 validator:
-  name: user1
-  staked: "100000000stake"
+  name: matt
+  staked: "100000000chipino"
+genesis:
+  chain_id: "chipinochain"
+  app_state:
+    staking:
+      params:
+        bond_denom: "chipino"
+
